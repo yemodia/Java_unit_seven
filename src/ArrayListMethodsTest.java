@@ -33,7 +33,7 @@ public class ArrayListMethodsTest {
         assertEquals(testList, ArrayListMethods.firstAndLast());
     }
 
-    /*
+
 
     @Test
     public void cGetNumbers() {
@@ -88,6 +88,6 @@ public class ArrayListMethodsTest {
     }
 
 
-     */
+
 
 }
