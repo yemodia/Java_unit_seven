@@ -29,26 +29,26 @@ public class Algorithms {
     }
     public static ArrayList<String> fileDuplicatesTwo()throws IOException{
         Scanner scan = new Scanner(new File("names.txt"));
-        String ori="";
-        ArrayList<String> ret= new ArrayList<String>();
+        String origin="";
+        ArrayList<String> dup= new ArrayList<String>();
         int count=0;
         while(scan.hasNext()){
-            ori+=scan.next();
-            ret.add(scan.next());
+            origin+=scan.next();
+            dup.add(scan.next());
             count++;
         }
-        System.out.println(ori);
+        System.out.println(origin);
         for(int i=0;i<count;i++){
             for(int j=0;j<count;j++){
-                if(ret.get(i)==ret.get(j)){
-                    ret.remove(i);
-                    ret.remove(j);
+                if(dup.get(i)==dup.get(j)){
+                    dup.remove(i);
+                    dup.remove(j);
                     i--;
                     j--;
                 }
             }
         }
-        return ret;
+        return dup;
     }
     public static ArrayList<Integer> orderedList()throws IOException{
         Scanner file1 = new Scanner(new File("com/company/file1.txt"));
