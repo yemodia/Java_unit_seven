@@ -1,5 +1,3 @@
-package com.company;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -29,13 +27,13 @@ public class Algorithms {
     }
     public static ArrayList<String> fileDuplicatesTwo()throws IOException{
         Scanner scan = new Scanner(new File("names.txt"));
-        String origin="";
+        String origin= scan.next();
         ArrayList<String> dup= new ArrayList<String>();
         int count=0;
         while(scan.hasNext()){
-            origin+=scan.next();
+
             dup.add(scan.next());
-            count++;
+
         }
         System.out.println(origin);
         for(int i=0;i<count;i++){

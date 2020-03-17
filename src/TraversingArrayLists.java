@@ -55,6 +55,11 @@ public class TraversingArrayLists {
             if (i > maxNum)
                 maxNum = i;
         }
+        numList.remove(numList.indexOf(maxNum));
+        numList.add(maxNum);
+        numList.remove(numList.indexOf(minNum));
+        numList.add(0, minNum);
+        return numList;
 
 
     }
